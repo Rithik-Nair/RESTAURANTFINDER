@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Taco Town
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p 678 Maple Drive, Springfield, ST 12345
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday : 10:00am - 8:00pm
+              p Saturday : 11:00am - 9:00pm
+              p Sunday : 11:00am - 7:00pm
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Facilities
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Tacos
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Takeout
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Indoor seating
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8272226612307!2d78.6534712403193!3d17.420077383541535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76730bf4dccf%3A0x2ca84b53416f0abd!2sAnurag%20University%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1690526278364!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor  Varshini
+                    small.reviewTimestamp  10 October 2023
+                  .col-xs-12
+                    p The Tacos were decent, but the indoor seating could be more comfortable.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor  Rithik
+                    small.reviewTimestamp  5 October 2023
+                  .col-xs-12
+                    p Good for a quick bite. The tacos are nice, but nothing extraordinary.
+    .col-xs-12.col-md-3
+      p.lead
+        | Taco Town is featured on Restaurant Finder for its delicious tacos, takeout options, and indoor seating.
+      p
+        | If you've visited and liked the tacos - or if you haven't - please leave a review to help others discover this taco spot.

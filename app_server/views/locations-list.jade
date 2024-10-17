@@ -1,0 +1,62 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Restaurant Finder
+      small &nbsp;Find great dining options near you!
+  .row
+    .col-12.col-md-8
+      .card
+        .card-block
+          h4
+            a(href="/location") Pasta Palace
+            small &nbsp;
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            span.badge.badge-pill.badge-default.float-right 150m
+          p.address 200 Main Street, Springfield, ST 12345
+          p.facilities
+            span.badge.badge-warning Italian cuisine
+            span.badge.badge-warning Takeout
+            span.badge.badge-warning Outdoor seating
+
+      .card
+        .card-block
+          h4
+            a(href="/location/sushi-haven") Sushi Haven
+            small &nbsp;
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            span.badge.badge-pill.badge-default.float-right 250m
+          p.address 345 Elm Avenue, Springfield, ST 12345
+          p.facilities
+            span.badge.badge-warning Sushi
+            span.badge.badge-warning Sake
+            span.badge.badge-warning Outdoor seating
+
+      .card
+        .card-block
+          h4
+            a(href="/location/taco-town") Taco Town
+            small &nbsp;
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            i.far.fa-star
+            span.badge.badge-pill.badge-default.float-right 300m
+          p.address 678 Maple Drive, Springfield, ST 12345
+          p.facilities
+            span.badge.badge-warning Tacos
+            span.badge.badge-warning Takeout
+            span.badge.badge-warning Indoor seating
+
+    .col-12.col-md-4
+      p.lead Looking for a cozy atmosphere and delicious food? Restaurant Finder helps you discover the best dining spots in your area, whether you're craving pasta, sushi, or tacos. Enjoy a great meal with us!

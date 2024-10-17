@@ -1,0 +1,98 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Pasta Palace
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+          p 200 Main Street, Springfield, ST 12345
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday : 11:00am - 10:00pm
+              p Saturday : 11:00am - 11:00pm
+              p Sunday : 12:00pm - 9:00pm
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Facilities
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Italian cuisine
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Takeout
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Outdoor seating
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8272226612307!2d78.6534712403193!3d17.420077383541535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76730bf4dccf%3A0x2ca84b53416f0abd!2sAnurag%20University%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1690526278364!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor  Hemanth
+                    small.reviewTimestamp  10 October 2023
+                  .col-xs-12
+                    p The pasta here is delicious! Love the outdoor seating.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor  Rithik
+                    small.reviewTimestamp  15 October 2023
+                  .col-xs-12
+                    p Pasta Palace serves great Pasta,this is the best restaurant to have Pasta in the city,.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor  Varshini
+                    small.reviewTimestamp  25 October 2023
+                  .col-xs-12
+                    p Good food, but the takeout service could be quicker.
+
+    .col-xs-12.col-md-3
+      p.lead
+        | Pasta Palace is listed on Restaurant Finder because it offers excellent Italian cuisine with the option of takeout and outdoor seating.
+      p
+        | If you've been here and enjoyed it - or if you didn't - please leave a review to help others make the best dining choices.
