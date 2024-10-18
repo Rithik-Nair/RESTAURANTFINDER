@@ -1,18 +1,23 @@
 doctype html
 html
   head
-    meta(name='Viewport', content='width=device-width',intial-scale=1.0)
-
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-  
-    link(rel='stylesheet',href='/bootstrap/css/amelia.bootstrap.css')
+
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
   body
+    // Navbar
     .navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
-          a.navbar-brand(href='/') Restaurant Finder
+          .d-flex.align-items-center
+            a.navbar-brand(href='/') 
+              .moving-title-container
+                .moving-title 
+                  span Restaurant Finder - 
+                  span.strapline Find great dining options near you! Discover hidden gems and exclusive deals only on Restaurant Finder!
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
             span.icon-bar
             span.icon-bar
@@ -20,19 +25,43 @@ html
         #navbar-main.navbar-collapse.collapse
           ul.nav.navbar-nav
             li 
+              a(href='/') <b> Home </b>
+            li 
               a(href='/about/') <b> About </b>
-             li 
+            li 
               a(href='/signin') <b> SignIn </b>
             li 
-              a(href='/review') <b>Add Review </b>
+              a(href='/review') <b> Add Review </b>
+
+    // Location Information
+    .location-info.container(style='margin-top: 70px;') // Add margin to avoid overlap with the fixed navbar
+      .row
+        .col-xs-12
+          h2 Location Information
+          p Flat no:304 street.no:14 Tarnaka
+          p Contact Number: 9392541720
+          p Monday - Friday: 9:00am - 7:00pm
+          p Saturday: 10:00am - 5:00pm
+
     .container
-      block content
+      .row
+        .col-md-3.sidebar
+          h4 SearchBar // This section is used to search as per your request
+          // Removed About Us section above the search bar
+
+          // Search form below Location Information
+          form(method='GET', action='/search', class='input-group mt-3')
+            input(type='text', name='query', placeholder='Search for a restaurant...', class='form-control')
+            button(type='submit', class='btn btn-primary') Search 
+
+        .col-md-9.main-content
+          block content
+
       footer
         .row
-          .col-xs-12
-            small &copy;Restaurant Finder,AI-A 2024
+          .col-xs-12.text-center
+            small &copy; Restaurant Finder, Team-21, AI-A 2024
+            
 
-  
-   
-  script(src='/javascripts/jquery-1.11.1.min.js')
-  script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/javascripts/bootstrap.min.js')
