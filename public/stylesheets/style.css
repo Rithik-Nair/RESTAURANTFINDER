@@ -1,13 +1,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fefae0; /* Light yellow background */
+    background-color: #ffeb3b; /* Light yellow background */
     color: #333333; /* Dark text for contrast */
 }
 
 /* Header Styles */
 header {
-    background: #fcbf49; /* Bright yellow-orange for header */
+    background: #ff9800; /* Orange for header */
     color: #ffffff; /* White text for contrast */
     padding: 20px 0;
     text-align: center;
@@ -15,7 +15,7 @@ header {
 
 /* Navigation */
 .navbar {
-    background: #ffb703; /* Vibrant yellow for the navbar */
+    background: #ffb74d; /* Light orange for the navbar */
     padding: 8px;
 }
 
@@ -28,7 +28,7 @@ header {
 }
 
 nav a:hover {
-    background: #ffe66d; /* Light yellow for hover effect */
+    background: #fff176; /* Light yellow for hover effect */
 }
 
 /* Container for the main content */
@@ -49,7 +49,7 @@ nav a:hover {
 
 .card h3 {
     margin-top: 0;
-    color: #fcbf49; /* Bright yellow-orange for card titles */
+    color: #ff9800; /* Orange for card titles */
 }
 
 /* Location and Services */
@@ -67,7 +67,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background: #fcbf49; /* Bright yellow-orange footer */
+    background: #ff9800; /* Orange footer */
     color: #ffffff;
     position: relative; /* Changed to relative */
     bottom: 0;
@@ -87,6 +87,6 @@ footer {
 
 .btn-primary {
     color: #ffffff;
-    background-color: #ffb703; /* Vibrant yellow for primary buttons */
-    border-color: #ffe66d; /* Light yellow for button borders */
+    background-color: #ffb74d; /* Light orange for primary buttons */
+    border-color: #fff176; /* Light yellow for button borders */
 }

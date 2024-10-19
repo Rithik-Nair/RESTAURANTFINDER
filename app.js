@@ -37,14 +37,14 @@ app.use((req, res, next) => {
 
 // General error handling
 app.use((err, req, res, next) => {
-  console.error(err.stack); // Log the error for debugging
+  // Ensure that 'err' is defined and passed to the error template
   res.status(err.status || 500);
-  res.render('error', {
-    title: 'Error',
-    message: err.message || 'Something went wrong!', // Use the error message if available
-    error: err // Pass the error object to the view
+  res.render('error', { 
+      message: err.message, 
+      error: err 
   });
 });
+
 
 
 module.exports = app;
